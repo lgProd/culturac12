@@ -1,0 +1,143 @@
+.danza{
+    background-image:url(../img/bg-expo/img-expo6.png);
+    background-size: cover;
+    min-height: 100vh;
+    @include flex-column;
+    justify-content: space-between;
+    width: 100vw;
+    position: relative;
+    top: 100px;
+    padding-bottom: 100px;
+    gap: 2rem;
+    h1{
+        margin-top: 100px;
+        font-size: $fs-titulos-h1;
+        font-weight: bold;
+        color: $color-bg;
+        text-shadow:1px 1px 20px rgba(0, 0, 0,1);
+    }
+    div {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap-reverse;
+        gap: 3rem;
+        .iframe-yt {
+            flex: 0 0 700px; 
+            height: 500px;
+            align-self: center;
+            max-width: 90vw;
+        }
+        div{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            margin: 3rem;
+            gap: .5rem;
+            background-color:rgba(255, 255, 255,.5);
+            padding-top: 1rem;
+            p{ 
+                max-width: 700px;
+                min-width: 500px;
+            }  
+        }
+    }
+    ul{
+        @include flex-row;
+        font-size: $fs-links-expo;
+        list-style: none;
+        li{
+            text-decoration: none;
+            transition: color 0.3s, text-shadow 0.3s;
+            a{
+                color:$color-principal;
+                font-weight: bolder;
+                text-shadow: 1px 1.5px 2.5px black;
+                text-decoration: none;
+                transition: color 0.3s, text-shadow 0.3s;
+            }
+            a:hover{
+                text-decoration: underline;
+                color:$color-secundario-dos;
+                transition: 0.5s ease;
+                text-shadow:0.5px 0.5px 50px $color-bg;
+            }
+        }   
+    }
+    .inscripcion{
+        padding: 20px 20px;
+        font-size: 4rem ;
+        font-weight: bolder;
+        color:rgb(68, 17, 116);
+        text-decoration: none;
+        background-color:$color-principal;
+        transition: 1s;
+        border-radius: 10px;
+    }
+    .inscripcion:hover{
+        color: rgb(244, 3, 207);
+        background-color:rgb(68, 17, 116);
+        scale: 0.8;
+        transition: 1s ease;
+        box-shadow:0.5px 0.5px 50px $color-bg;
+    }    
+}
+
+
+/* MEDIA QUERIES */
+
+@media all and (min-width: 1000px) and (max-width: 1600px){
+    .danza{
+        div{
+            iframe{
+                flex: none;
+                height: auto;
+            }
+        }
+        .inscripcion{
+            max-width: 90vw;
+            font-size: 2rem;
+        }
+    }
+}
+
+@media all and (min-width: 551px) and (max-width: 999px){
+    .danza{
+        ul{
+            @include flex-column;
+        }
+        .inscripcion{
+            max-width: 90vw;
+            font-size: 2rem;
+        }
+    }
+}
+
+
+@media all and (max-width: 550px){
+    .danza{
+        h1{
+            font-size: 4rem;
+        }
+        div{
+            .iframe-yt{
+                height: 350px;
+            }
+            div{
+                p{
+                    min-width: 90vw;
+                }
+            }
+        }
+        ul{
+            @include flex-column;
+        }
+        .inscripcion{
+            max-width: 90vw;
+            font-size: 2rem;
+        }
+    }
+}

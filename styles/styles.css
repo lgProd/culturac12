@@ -1,0 +1,961 @@
+/* FONT Y RESET */
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local("Gotham Pro Light"), local("GothamPro-Light"), url("../fonts/GothamPro-Light.woff2") format("woff2"), url("../fonts/GothamPro-Light.woff") format("woff"), url("../fonts/GothamPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gotham Pro',sans-serif;
+  text-align: center; }
+
+/* FIN FONT Y RESET */
+/* IMPORT */
+.galeriaarte {
+  background-image: url(../img/bg-expo/img-expo4.png);
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100vw;
+  position: relative;
+  top: 100px;
+  padding-bottom: 100px;
+  gap: 2rem; }
+  .galeriaarte h1 {
+    margin-top: 100px;
+    font-size: 6rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 20px black; }
+  .galeriaarte div {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    gap: 3rem; }
+    .galeriaarte div .iframe-yt {
+      flex: 0 0 700px;
+      height: 500px;
+      align-self: center;
+      max-width: 90vw; }
+    .galeriaarte div div {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      margin: 3rem;
+      gap: .5rem;
+      background-color: rgba(255, 255, 255, 0.5);
+      padding-top: 1rem; }
+      .galeriaarte div div p {
+        max-width: 700px;
+        min-width: 500px; }
+  .galeriaarte ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    align-content: center;
+    font-size: 2rem;
+    list-style: none; }
+    .galeriaarte ul li {
+      text-decoration: none;
+      transition: color 0.3s, text-shadow 0.3s; }
+      .galeriaarte ul li a {
+        color: #fc228c;
+        font-weight: bolder;
+        text-shadow: 1px 1.5px 2.5px black;
+        text-decoration: none;
+        transition: color 0.3s, text-shadow 0.3s; }
+      .galeriaarte ul li a:hover {
+        text-decoration: underline;
+        color: blueviolet;
+        transition: 0.5s ease;
+        text-shadow: 0.5px 0.5px 50px white; }
+  .galeriaarte .inscripcion {
+    padding: 20px 20px;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #441174;
+    text-decoration: none;
+    background-color: #fc228c;
+    transition: 1s;
+    border-radius: 10px; }
+  .galeriaarte .inscripcion:hover {
+    color: #fc228c;
+    background-color: #441174;
+    scale: 0.8;
+    transition: 1s ease;
+    box-shadow: 0.5px 0.5px 50px white; }
+
+/* MEDIA QUERIES */
+@media all and (min-width: 1000px) and (max-width: 1600px) {
+  .galeriaarte div iframe {
+    flex: none;
+    height: auto; }
+  .galeriaarte .inscripcion {
+    max-width: 90vw;
+    font-size: 2rem; } }
+
+@media all and (min-width: 551px) and (max-width: 999px) {
+  .galeriaarte ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    align-content: center;
+    flex-wrap: wrap; }
+  .galeriaarte .inscripcion {
+    max-width: 90vw;
+    font-size: 2rem; } }
+
+@media all and (max-width: 550px) {
+  .galeriaarte h1 {
+    font-size: 4rem; }
+  .galeriaarte div .iframe-yt {
+    height: 350px; }
+  .galeriaarte div div p {
+    min-width: 90vw; }
+  .galeriaarte ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    align-content: center;
+    flex-wrap: wrap; }
+  .galeriaarte .inscripcion {
+    max-width: 90vw;
+    font-size: 2rem; } }
+
+.escritos {
+  background-image: url(../img/bg-expo/img-expo5.png);
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100vw;
+  position: relative;
+  top: 100px;
+  padding-bottom: 100px;
+  gap: 2rem; }
+  .escritos h1 {
+    margin-top: 100px;
+    font-size: 6rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 20px black; }
+  .escritos div {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    gap: 3rem; }
+    .escritos div .iframe-yt {
+      flex: 0 0 700px;
+      height: 500px;
+      align-self: center;
+      max-width: 90vw; }
+    .escritos div div {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      margin: 3rem;
+      gap: .5rem;
+      background-color: rgba(255, 255, 255, 0.5);
+      padding-top: 1rem; }
+      .escritos div div p {
+        max-width: 700px;
+        min-width: 500px; }
+  .escritos ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    align-content: center;
+    font-size: 2rem;
+    list-style: none; }
+    .escritos ul li {
+      text-decoration: none;
+      transition: color 0.3s, text-shadow 0.3s; }
+      .escritos ul li a {
+        color: #fc228c;
+        font-weight: bolder;
+        text-shadow: 1px 1.5px 2.5px black;
+        text-decoration: none;
+        transition: color 0.3s, text-shadow 0.3s; }
+      .escritos ul li a:hover {
+        text-decoration: underline;
+        color: blueviolet;
+        transition: 0.5s ease;
+        text-shadow: 0.5px 0.5px 50px white; }
+  .escritos .inscripcion {
+    padding: 20px 20px;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #441174;
+    text-decoration: none;
+    background-color: #fc228c;
+    transition: 1s;
+    border-radius: 10px; }
+  .escritos .inscripcion:hover {
+    color: #fc228c;
+    background-color: #441174;
+    scale: 0.8;
+    transition: 1s ease;
+    box-shadow: 0.5px 0.5px 50px white; }
+
+/* MEDIA QUERIES */
+@media all and (min-width: 1000px) and (max-width: 1600px) {
+  .escritos div iframe {
+    flex: none;
+    height: auto; }
+  .escritos .inscripcion {
+    max-width: 90vw;
+    font-size: 2rem; } }
+
+@media all and (min-width: 551px) and (max-width: 999px) {
+  .escritos ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    align-content: center;
+    flex-wrap: wrap; }
+  .escritos .inscripcion {
+    max-width: 90vw;
+    font-size: 2rem; } }
+
+@media all and (max-width: 550px) {
+  .escritos h1 {
+    font-size: 4rem; }
+  .escritos div .iframe-yt {
+    height: 350px; }
+  .escritos div div p {
+    min-width: 90vw; }
+  .escritos ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    align-content: center;
+    flex-wrap: wrap; }
+  .escritos .inscripcion {
+    max-width: 90vw;
+    font-size: 2rem; } }
+
+.melt {
+  background-image: url(../img/bg-expo/img-expo3.png);
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100vw;
+  position: relative;
+  top: 100px;
+  padding-bottom: 100px;
+  gap: 2rem; }
+  .melt h1 {
+    margin-top: 100px;
+    font-size: 6rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 20px black; }
+  .melt div {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    gap: 3rem; }
+    .melt div .iframe-yt {
+      flex: 0 0 700px;
+      height: 500px;
+      align-self: center;
+      max-width: 90vw; }
+    .melt div div {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      margin: 3rem;
+      gap: .5rem;
+      background-color: rgba(255, 255, 255, 0.5);
+      padding-top: 1rem; }
+      .melt div div p {
+        max-width: 700px;
+        min-width: 500px; }
+  .melt ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    align-content: center;
+    font-size: 2rem;
+    list-style: none; }
+    .melt ul li {
+      text-decoration: none;
+      transition: color 0.3s, text-shadow 0.3s; }
+      .melt ul li a {
+        color: #fc228c;
+        font-weight: bolder;
+        text-shadow: 1px 1.5px 2.5px black;
+        text-decoration: none;
+        transition: color 0.3s, text-shadow 0.3s; }
+      .melt ul li a:hover {
+        text-decoration: underline;
+        color: blueviolet;
+        transition: 0.5s ease;
+        text-shadow: 0.5px 0.5px 50px white; }
+  .melt .inscripcion {
+    padding: 20px 20px;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #441174;
+    text-decoration: none;
+    background-color: #fc228c;
+    transition: 1s;
+    border-radius: 10px; }
+  .melt .inscripcion:hover {
+    color: #f403cf;
+    background-color: #441174;
+    scale: 0.8;
+    transition: 1s ease;
+    box-shadow: 0.5px 0.5px 50px white; }
+
+/* MEDIA QUERIES */
+@media all and (min-width: 1000px) and (max-width: 1600px) {
+  .melt div iframe {
+    flex: none;
+    height: auto; }
+  .melt .inscripcion {
+    max-width: 90vw;
+    font-size: 2rem; } }
+
+@media all and (min-width: 551px) and (max-width: 999px) {
+  .melt ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    align-content: center;
+    flex-wrap: wrap; }
+  .melt .inscripcion {
+    max-width: 90vw;
+    font-size: 2rem; } }
+
+@media all and (max-width: 550px) {
+  .melt h1 {
+    font-size: 4rem; }
+  .melt div .iframe-yt {
+    height: 350px; }
+  .melt div div p {
+    min-width: 90vw; }
+  .melt ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    align-content: center;
+    flex-wrap: wrap; }
+  .melt .inscripcion {
+    max-width: 90vw;
+    font-size: 2rem; } }
+
+.danza {
+  background-image: url(../img/bg-expo/img-expo6.png);
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100vw;
+  position: relative;
+  top: 100px;
+  padding-bottom: 100px;
+  gap: 2rem; }
+  .danza h1 {
+    margin-top: 100px;
+    font-size: 6rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 20px black; }
+  .danza div {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    gap: 3rem; }
+    .danza div .iframe-yt {
+      flex: 0 0 700px;
+      height: 500px;
+      align-self: center;
+      max-width: 90vw; }
+    .danza div div {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      margin: 3rem;
+      gap: .5rem;
+      background-color: rgba(255, 255, 255, 0.5);
+      padding-top: 1rem; }
+      .danza div div p {
+        max-width: 700px;
+        min-width: 500px; }
+  .danza ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    align-content: center;
+    font-size: 2rem;
+    list-style: none; }
+    .danza ul li {
+      text-decoration: none;
+      transition: color 0.3s, text-shadow 0.3s; }
+      .danza ul li a {
+        color: #fc228c;
+        font-weight: bolder;
+        text-shadow: 1px 1.5px 2.5px black;
+        text-decoration: none;
+        transition: color 0.3s, text-shadow 0.3s; }
+      .danza ul li a:hover {
+        text-decoration: underline;
+        color: blueviolet;
+        transition: 0.5s ease;
+        text-shadow: 0.5px 0.5px 50px white; }
+  .danza .inscripcion {
+    padding: 20px 20px;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #441174;
+    text-decoration: none;
+    background-color: #fc228c;
+    transition: 1s;
+    border-radius: 10px; }
+  .danza .inscripcion:hover {
+    color: #f403cf;
+    background-color: #441174;
+    scale: 0.8;
+    transition: 1s ease;
+    box-shadow: 0.5px 0.5px 50px white; }
+
+/* MEDIA QUERIES */
+@media all and (min-width: 1000px) and (max-width: 1600px) {
+  .danza div iframe {
+    flex: none;
+    height: auto; }
+  .danza .inscripcion {
+    max-width: 90vw;
+    font-size: 2rem; } }
+
+@media all and (min-width: 551px) and (max-width: 999px) {
+  .danza ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    align-content: center;
+    flex-wrap: wrap; }
+  .danza .inscripcion {
+    max-width: 90vw;
+    font-size: 2rem; } }
+
+@media all and (max-width: 550px) {
+  .danza h1 {
+    font-size: 4rem; }
+  .danza div .iframe-yt {
+    height: 350px; }
+  .danza div div p {
+    min-width: 90vw; }
+  .danza ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    align-content: center;
+    flex-wrap: wrap; }
+  .danza .inscripcion {
+    max-width: 90vw;
+    font-size: 2rem; } }
+
+.inscripcion-page {
+  background: linear-gradient(#441174, blueviolet);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100vw;
+  position: relative;
+  top: 100px;
+  padding-bottom: 100px;
+  gap: 2rem; }
+  .inscripcion-page h1 {
+    margin-top: 100px;
+    font-size: 6rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 20px black;
+    max-width: 90vw; }
+  .inscripcion-page iframe {
+    width: 800px;
+    max-width: 90vw; }
+
+@media all and (min-width: 551px) and (max-width: 999px) {
+  .inscripcion-page h1 {
+    font-size: 4rem; } }
+
+@media all and (max-width: 550px) {
+  .inscripcion-page h1 {
+    font-size: 3rem; } }
+
+.contacto {
+  position: relative;
+  top: 100px;
+  padding-bottom: 100px; }
+  .contacto h1 {
+    font-size: 6rem;
+    font-weight: bold; }
+  .contacto form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 150px;
+    min-width: 374px;
+    max-width: 90vw;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: flex-start; }
+    .contacto form div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      align-content: center;
+      gap: 1rem;
+      justify-content: space-between;
+      width: 100%; }
+      .contacto form div input {
+        border: none;
+        border-bottom: 1px solid #f403cf;
+        padding: 5px;
+        width: 60%; }
+      .contacto form div input:focus {
+        border: 1px solid #f403cf;
+        outline: none; }
+      .contacto form div select {
+        border: none;
+        border-bottom: 1px solid #f403cf;
+        padding: 7px;
+        width: 60%; }
+      .contacto form div select:focus {
+        border: 1px solid #f403cf;
+        outline: none; }
+    .contacto form .mensaje {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 1rem;
+      align-content: center;
+      flex-wrap: wrap;
+      margin-top: 2rem; }
+      .contacto form .mensaje textarea {
+        border: none;
+        border: 1px solid #f403cf;
+        width: 100%;
+        height: 200px;
+        text-align: start;
+        padding: 15px; }
+      .contacto form .mensaje textarea:focus {
+        border: 1px solid #f403cf;
+        outline: none; }
+    .contacto form button {
+      font-size: 2rem;
+      padding: 20px;
+      color: #fc228c;
+      font-weight: bolder;
+      background-color: white;
+      border: 2px solid #441174;
+      cursor: pointer;
+      align-self: center;
+      transition: 1s ease; }
+    .contacto form button:hover {
+      background-color: #441174;
+      border: 2px solid #fc228c;
+      scale: 0.9;
+      transition: 1s ease; }
+
+/* MEDIA QUERIES */
+/* MOBILE */
+@media all and (max-width: 550px) {
+  .contacto h1 {
+    font-size: 3rem; }
+  .contacto form {
+    padding: 2px; } }
+
+/* FIN IMPORT */
+/* HEADER */
+header {
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 3%;
+  border-bottom: 1px solid gray;
+  position: fixed;
+  top: 0;
+  z-index: 900; }
+  header a img {
+    height: 98px; }
+  header nav {
+    background-color: white; }
+    header nav div {
+      background-color: white; }
+      header nav div .navbar-toggler {
+        outline: none;
+        border: none;
+        box-shadow: none; }
+      header nav div .navbar-toggler:focus {
+        outline: none;
+        border: none;
+        box-shadow: none; }
+      header nav div div ul li:hover {
+        color: blueviolet;
+        font-weight: bold; }
+      header nav div div ul li ul {
+        border: 1px solid gray; }
+        header nav div div ul li ul li {
+          padding: 0 10px; }
+          header nav div div ul li ul li a {
+            background-color: white;
+            text-decoration: none;
+            color: #252424; }
+          header nav div div ul li ul li a:focus {
+            background-color: white; }
+        header nav div div ul li ul li:first-child {
+          background-color: #fc228c; }
+          header nav div div ul li ul li:first-child a {
+            background-color: #fc228c;
+            color: #441174; }
+        header nav div div ul li ul li:last-child {
+          background-color: #441174; }
+          header nav div div ul li ul li:last-child a {
+            background-color: #441174;
+            color: #fc228c; }
+        header nav div div ul li ul .dropdown-expo:hover {
+          color: blueviolet;
+          font-weight: bold; }
+
+/* FIN HEADER */
+/* MAIN */
+main {
+  position: relative;
+  top: 100px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  align-content: center;
+  flex-wrap: wrap; }
+  main div img {
+    height: 90vh;
+    max-width: 90vw;
+    object-fit: cover;
+    margin-right: 80px; }
+
+/* FIN MAIN */
+/* SECTION */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  align-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  top: 100px;
+  min-height: 100vh;
+  border-bottom: 2px solid #441174;
+  text-shadow: 1px 1px 20px black;
+  color: white; }
+  section h1 {
+    margin-top: 100px;
+    font-size: 6rem;
+    font-weight: bold; }
+  section h2 {
+    margin-top: 100px;
+    font-size: 6rem;
+    font-weight: bold; }
+  section div {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    align-content: center; }
+    section div div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 1rem;
+      align-content: center;
+      flex-wrap: wrap; }
+      section div div h3 {
+        font-size: 2.5rem; }
+      section div div p {
+        font-size: 1.2rem;
+        max-width: 800px; }
+      section div div ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1rem;
+        align-content: center;
+        flex-wrap: wrap;
+        font-size: 2rem;
+        list-style: none; }
+        section div div ul li {
+          text-decoration: none;
+          transition: color 0.3s, text-shadow 0.3s; }
+          section div div ul li a {
+            color: #fc228c;
+            font-weight: bolder;
+            text-shadow: 1px 1.5px 2.5px black;
+            text-decoration: none;
+            transition: color 0.3s, text-shadow 0.3s; }
+          section div div ul li a:hover {
+            text-decoration: underline;
+            color: blueviolet;
+            transition: 0.5s ease;
+            text-shadow: 0.5px 0.5px 50px white; }
+    section div img {
+      width: 42rem;
+      border: 3px solid #441174;
+      border-radius: 50%; }
+  section .inscripcion {
+    display: block;
+    padding: 20px 20px;
+    max-width: 90vw;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #441174;
+    text-decoration: none;
+    background-color: #fc228c;
+    transition: 1s;
+    border-radius: 10px;
+    margin-top: 50px; }
+  section .inscripcion:hover {
+    color: #f403cf;
+    background-color: #441174;
+    scale: 0.8;
+    transition: 1s ease;
+    box-shadow: 0.5px 0.5px 50px white; }
+
+#nosotroslink {
+  background-image: url(../img/fotoequipo-transformed.jpeg);
+  background-size: cover;
+  color: white;
+  margin-bottom: 0; }
+  #nosotroslink h1 {
+    color: #fc228c; }
+
+#exponenciarte {
+  background-image: url(../img/bg-expo/img-expo1.png);
+  background-size: cover;
+  color: white;
+  padding-bottom: 100px; }
+  #exponenciarte h2 {
+    color: blueviolet;
+    margin-bottom: 50px;
+    font-weight: bolder; }
+
+#efemerides {
+  background-image: url(../img/bg-expo/img-expo7.png);
+  text-shadow: 0.5px 0.5px 10px black;
+  background-size: cover; }
+  #efemerides div {
+    margin-bottom: 100px;
+    text-shadow: 0.5px 0.5px 10px black; }
+    #efemerides div div h3 {
+      color: #fc228c; }
+    #efemerides div div img {
+      width: 42rem;
+      border-radius: 50%;
+      border: 3px solid #441174; }
+
+/* FIN SECTION */
+/* FOOTER */
+footer {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 2 8fr 2fr;
+  gap: 2rem;
+  padding-top: 120px;
+  color: #252424;
+  background: linear-gradient(#a1a1a1, #424242); }
+  footer .grid-contenedor {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: space-evenly;
+    justify-content: space-evenly; }
+    footer .grid-contenedor .direccion-contenedor {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 1rem;
+      align-content: center;
+      flex-wrap: wrap;
+      font-size: 1rem;
+      align-self: center;
+      justify-self: center;
+      gap: 1rem; }
+      footer .grid-contenedor .direccion-contenedor a {
+        color: #252424;
+        text-decoration: none; }
+        footer .grid-contenedor .direccion-contenedor a h3 {
+          font-size: 2.5rem;
+          font-weight: lighter;
+          color: #252424; }
+      footer .grid-contenedor .direccion-contenedor a:hover {
+        text-decoration: underline; }
+      footer .grid-contenedor .direccion-contenedor span {
+        font-size: 1.2rem; }
+    footer .grid-contenedor .mapa-container {
+      border-color: 30px solid #f403cf; }
+    footer .grid-contenedor .rrss-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 1rem;
+      align-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-self: flex-start; }
+      footer .grid-contenedor .rrss-container h3 {
+        font-size: 2.5rem; }
+      footer .grid-contenedor .rrss-container a img {
+        width: 70px; }
+  footer .firma p {
+    font-size: 0.7rem; }
+    footer .firma p a {
+      text-decoration: none;
+      border-bottom: 1px solid #f403cf;
+      color: black; }
+
+/* FIN FOOTER */
+/* MEDIA QUERIES */
+/* TABLET */
+@media all and (min-width: 550px) and (max-width: 1500px) {
+  main div img {
+    margin-right: 0; }
+  section h1, section h2 {
+    font-size: 4rem; }
+  section img {
+    display: none; }
+  section .inscripcion {
+    font-size: 2rem; }
+  footer .grid-contenedor {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto; }
+    footer .grid-contenedor .mapa-container {
+      display: none; }
+    footer .grid-contenedor .direccion-contenedor {
+      grid-area: 1 / 1 / 3 / 2; }
+    footer .grid-contenedor .rrss-container {
+      grid-area: 1 / 2 / 3 / 3; } }
+
+/* FIN TABLET */
+/* MOBILE */
+@media all and (max-width: 550px) {
+  header a img {
+    height: 70px; }
+  main div img {
+    margin-right: 0; }
+  section h1 {
+    font-size: 4rem; }
+  section h2 {
+    font-size: 3rem; }
+  section img {
+    display: none; }
+  section .inscripcion {
+    font-size: 2rem; }
+  footer .grid-contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content: center; }
+    footer .grid-contenedor .mapa-container {
+      display: none; }
+    footer .grid-contenedor .direccion-contenedor, footer .grid-contenedor .rrss-container {
+      justify-self: center; } }
+
+/* FIN MOBILE */
