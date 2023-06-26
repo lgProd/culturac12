@@ -905,9 +905,9 @@ footer {
         font-size: 2.5rem; }
       footer .grid-contenedor .rrss-container a img {
         width: 70px; }
-  footer .firmacontainer p {
+  footer .firma-container p {
     font-size: 0.7rem; }
-    footer .firmacontainer p a {
+    footer .firma-container p a {
       text-decoration: none;
       border-bottom: 1px solid #f403cf;
       color: black; }
